@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <h1>🎵 YouTube Music Player</h1>
+            
+            <div class="search-section">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search for a song..."
+                    class="search-input"
+                >
+                <button id="searchBtn" class="btn btn-primary">Search</button>
+            </div>
+
+            <div class="results">
+                <div id="resultsList" class="results-list"></div>
+            </div>
+
+            <div class="now-playing">
+                <h2>Now Playing</h2>
+                <div id="playerContainer" class="player-container">
+                    <p class="empty-state">Select a song to play</p>
+                </div>
+            </div>
+
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <div id="playlist" class="playlist-items"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
